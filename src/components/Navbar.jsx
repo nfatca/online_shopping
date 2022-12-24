@@ -6,7 +6,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container">
-          <NavLink className="navbar-brand" to="#">
+          <NavLink className="navbar-brand" to="/">
             LA COLLECTION
           </NavLink>
           <button
@@ -28,26 +28,22 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/products"
-                >
+                <NavLink className="nav-link" to="/products">
                   Products
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="btn btn-outline-dark" to="/login">
-                  <i className="fa fa-sign-in me-1" /> Login
-                </NavLink>
-                <NavLink className="btn btn-outline-dark" to="/login">
-                  <i className="fa fa-user-plus me-1" /> Register
-                </NavLink>
-                <NavLink className="btn btn-outline-dark" to="/login">
-                  <i className="fa fa-shopping-cart me-1" /> Cart(0)
-                </NavLink>
-              </li>
             </ul>
+            <div className="buttons">
+              <NavLink to="/login" className="btn btn-outline-dark">
+                <i className="fa fa-sign-in me-1" /> Login
+              </NavLink>
+              <NavLink to="/login" className="btn btn-outline-dark">
+                <i className="fa fa-user-plus me-1" /> Register
+              </NavLink>
+              <NavLink to="/login" className="btn btn-outline-dark">
+                <i className="fa fa-shopping-cart me-1" /> Cart(0)
+              </NavLink>
+            </div>
           </div>
         </div>
       </nav>
